@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form - Modern UI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-wrapper">
+            <div class="form-header">
+                <h1>Create Your Account</h1>
+                <p>Join us today and explore amazing features</p>
+            </div>
+
+            <form class="modern-form">
+                <!-- Name Field -->
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" placeholder="Enter Your Full Name" required>
+                    <span class="focus-border"></span>
+                </div>
+
+                <!-- Email Field -->
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" placeholder="Enter Your Email" required>
+                    <span class="focus-border"></span>
+                </div>
+
+                <!-- Password Field -->
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter Your Password" required>
+                    <span class="focus-border"></span>
+                </div>
+
+                <!-- Mobile Number -->
+                <div class="form-group">
+                    <label for="mobile">Mobile Number</label>
+                    <input type="number" id="mobile" placeholder="Enter Your Mobile No" required>
+                    <span class="focus-border"></span>
+                </div>
+
+                <!-- Gender Selection -->
+                <div class="form-group">
+                    <label for="gender">Select Gender</label>
+                    <select id="gender" required>
+                        <option value="">Select Gender</option>
+                        <option>Male</option>
+                        <option>Female</option>
+                        <option>Other</option>
+                    </select>
+                    <span class="focus-border"></span>
+                </div>
+
+                <!-- Course Selection -->
+                <div class="form-group">
+                    <label for="course">Select Course</label>
+                    <select id="course" required>
+                        <option value="">Select Course</option>
+                        <option>BCA</option>
+                        <option>BCS</option>
+                        <option>BTech</option>
+                    </select>
+                    <span class="focus-border"></span>
+                </div>
+
+                <!-- Date of Birth -->
+                <div class="form-group">
+                    <label for="dob">Date of Birth</label>
+                    <input type="date" id="dob" required>
+                    <span class="focus-border"></span>
+                </div>
+
+                <!-- Photo Upload -->
+                <div class="form-group">
+                    <label for="photo">Upload Photo</label>
+                    <input type="file" id="photo" accept="image/*">
+                    <span class="focus-border"></span>
+                </div>
+
+                <!-- Favorite Color -->
+                <div class="form-group">
+                    <label for="color">Pick Your Favorite Color</label>
+                    <input type="color" id="color" value="#6C5CE7">
+                </div>
+
+                <!-- Experience Range -->
+                <div class="form-group">
+                    <label for="experience">Experience Level (Years)</label>
+                    <input type="range" id="experience" min="0" max="20" value="5">
+                </div>
+
+                <!-- Message -->
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" placeholder="Enter Your Message" rows="4"></textarea>
+                    <span class="focus-border"></span>
+                </div>
+
+                <!-- Terms and Conditions -->
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="terms" required>
+                    <label for="terms" class="checkbox-label">I agree to Terms and Conditions</label>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
