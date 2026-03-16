@@ -1,0 +1,129 @@
+  * {
+      padding: 0;
+      margin: 0px;
+      box-sizing: border-box;
+  }
+
+
+
+  .wrapper {
+      display: flex;
+      gap: 20px;
+  }
+
+  .box {
+      width: 200px;
+      height: 200px;
+      background-color: black;
+  }
+
+  #new {
+      width: 200px;
+      height: 200px;
+      background-color: orange;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     color: white;
+  }
+
+  .anchor_wrapper {
+      display: flex;
+      gap: 20px;
+
+  }
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.logo h2 {
+    color: white;
+    font-size: 24px;
+    margin: 0;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    margin: 0 15px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.menu a:hover {
+    color: #ffcc00;
+    transform: translateY(-2px);
+}
+
+.search {
+    display: flex;
+    align-items: center;
+}
+
+.search input {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+    font-size: 16px;
+    transition: width 0.3s ease;
+    width: 200px;
+}
+
+.search input:focus {
+    width: 250px;
+}
+
+.search button {
+    padding: 8px 12px;
+    border: none;
+    background-color: #ffcc00;
+    color: #333;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.search button:hover {
+    background-color: #e6b800;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 10px;
+    }
+    .menu {
+        margin: 10px 0;
+    }
+    .menu li {
+        margin: 0 10px;
+    }
+    .search {
+        margin-top: 10px;
+    }
+}
