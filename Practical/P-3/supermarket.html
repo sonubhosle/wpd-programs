@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Super Market</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: green;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: yellow;
+        }
+
+        .container {
+            display: flex;
+            padding: 20px;
+        }
+
+        .sidebar {
+            width: 25%;
+            background-color: #ddd;
+            padding: 15px;
+        }
+
+        .content {
+            width: 75%;
+            padding: 15px;
+            background-color: white;
+        }
+
+        .product {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px;
+            display: inline-block;
+            width: 150px;
+            text-align: center;
+            background-color: #fafafa;
+        }
+
+        .product:hover {
+            background-color: #e0ffe0;
+        }
+
+        .product img {
+            width: 100px;
+            height: 100px;
+        }
+
+        .category {
+            font-size: 12px;
+            color: gray;
+        }
+
+        footer {
+            background-color: green;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+<header>
+    <h1>Fresh Mart Supermarket</h1>
+    <p>Your daily needs in one place</p>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Fruits</a>
+    <a href="#">Vegetables</a>
+    <a href="#">Groceries</a>
+    <a href="#">Contact</a>
+</nav>
+
+<div class="container">
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h3>Categories</h3>
+        <ul>
+            <li>Fruits</li>
+            <li>Vegetables</li>
+            <li>Dairy Products</li>
+            <li>Snacks</li>
+            <li>Beverages</li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content">
+        <h3>Products</h3>
+
+        <div class="product">
+            <img src="https://www.bbassets.com/media/uploads/p/m/10000263_18-fresho-strawberry.jpg?tr=w-154,q-80" alt="Apple">
+            <p class="category">Fruits</p>
+            <p>Apple</p>
+            <p>₹120/kg</p>
+        </div>
+
+        <div class="product">
+            <img src="https://www.bbassets.com/media/uploads/p/m/40149833_1-nandini-shubham-milk.jpg?tr=w-154,q-80" alt="Milk">
+            <p class="category">Dairy</p>
+            <p>Milk</p>
+            <p>₹50</p>
+        </div>
+
+        <div class="product">
+            <img src="https://www.bbassets.com/media/uploads/p/m/40259822_11-the-health-factory-zero-maida-bread-simply-whole-wheat-rich-in-protein-fibre-no-chemicals.jpg?tr=w-154,q-80" alt="Bread">
+            <p class="category">Bakery</p>
+            <p>Bread</p>
+            <p>₹30</p>
+        </div>
+
+        <div class="product">
+            <img src="https://www.bbassets.com/media/uploads/p/l/10000033_26-fresho-banana-yelakki.jpg" alt="Banana">
+            <p class="category">Fruits</p>
+            <p>Banana</p>
+            <p>₹40</p>
+        </div>
+
+    </div>
+
+</div>
+
+<footer>
+    <p>© 2026 Fresh Mart Supermarket</p>
+</footer>
+
+</body>
+</html>

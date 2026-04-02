@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box{
+    width: 200px;
+    height: 200px;
+    background-color: seagreen;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    animation: move 5s linear infinite;
+    }
+
+    /* @keyframes move{
+        to{
+            transform: translateY(300px) rotate(360deg);
+            background-color: violet;
+        }
+        from{
+            transform: translateY(0) rotate(0deg);
+            background-color: yellow;
+        }
+    } */
+
+     @keyframes move{
+        0%{
+            transform: translateY(0) rotate(0deg);
+            background-color: yellow;
+            border-radius: 40%;
+        }
+        10%{
+            transform: translateY(30px) rotate(36deg);
+            background-color: orange;
+        }
+        20%{
+            transform: translateY(60px) rotate(72deg);
+            background-color: red;
+        }
+        30%{
+            transform: translateY(90px) rotate(108deg);
+            background-color: pink;
+        }
+        40%{
+            transform: translateY(120px) rotate(144deg);
+            background-color: purple;
+        }
+        50%{
+            transform: translateY(160px) rotate(180deg);
+            background-color: violet;
+        }
+        60%{
+            transform: translateY(200px) rotate(216deg);
+            background-color: purple;
+        }
+       70%{
+            transform: translateY(240px) rotate(252deg);
+            background-color: pink;
+        }
+        80%{
+            transform: translateY(270px) rotate(288deg);
+            background-color: red;
+        }
+        90%{
+            transform: translateY(300px) rotate(324deg);
+            background-color: orange;
+        }
+        100%{
+            transform: translateY(300px) rotate(360deg);
+            background-color: violet;
+        }
+    }
+</style>
+<body>
+    <h1>Animation</h1>
+    <div class="box">
+        Animation
+    </div>
+</body>
+</html>
