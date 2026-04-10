@@ -95,3 +95,22 @@ footer {
     padding: 20px;
     margin-top: 40px;
 }
+
+/* End Points */
+@media(max-width:576px){
+    header{
+        display: block;
+        text-align: center;
+    }
+    header ul {
+     justify-content: center;
+     margin: 20px 0px;
+}
+
+header button {
+    background-color: crimson;
+    color: white;
+    width: 200px;
+    height: 40px;
+}
+}
