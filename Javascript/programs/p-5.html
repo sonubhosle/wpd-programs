@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Events Example</title>
+
+    <script>
+        function clickEvent() {
+            alert("Button Clicked!");
+        }
+
+        function mouseOverEvent() {
+            document.getElementById("text").innerHTML = "Mouse is over me!";
+        }
+
+        function mouseOutEvent() {
+            document.getElementById("text").innerHTML = "Mouse left!";
+        }
+
+        function changeEvent() {
+            alert("Dropdown value changed!");
+        }
+
+        function keyDownEvent() {
+            document.getElementById("key").innerHTML = "Key Pressed!";
+        }
+    </script>
+</head>
+<body>
+
+<h2>JavaScript Events Demo</h2>
+
+<!-- onclick -->
+<button onclick="clickEvent()">Click Me</button>
+
+<br><br>
+
+<!-- onmouseover & onmouseout -->
+<p id="text" onmouseover="mouseOverEvent()" onmouseout="mouseOutEvent()">
+    Hover over this text
+</p>
+
+<br>
+
+<!-- onchange -->
+<select onchange="changeEvent()">
+    <option>Select</option>
+    <option>Option 1</option>
+    <option>Option 2</option>
+</select>
+
+<br><br>
+
+<!-- onkeydown -->
+<input type="text" onkeydown="keyDownEvent()" placeholder="Type something">
+<p id="key"></p>
+
+</body>
+</html>
