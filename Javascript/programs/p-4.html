@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Switch Case Example</title>
+</head>
+<body>
+
+<h2>Simple Calculator</h2>
+
+<script>
+    var num1 = parseInt(prompt("Enter first number:"));
+    var num2 = parseInt(prompt("Enter second number:"));
+    var choice = prompt("Enter operation (+, -, *, /):");
+
+    var result;
+
+    switch(choice) {
+        case '+':
+            result = num1 + num2;
+            break;
+
+        case '-':
+            result = num1 - num2;
+            break;
+
+        case '*':
+            result = num1 * num2;
+            break;
+
+        case '/':
+            result = num1 / num2;
+            break;
+
+        default:
+            result = "Invalid operation!";
+    }
+
+    document.write("Result: " + result);
+</script>
+
+</body>
+</html>
